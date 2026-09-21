@@ -1,0 +1,275 @@
+! ============================================================
+! Cargas_BT.dss – Cargas BT (Consumo Médio c/ Grampo de Fase)
+! ============================================================
+
+New Load.UCBT_COM_13610584_0 bus1=BT_6531952.1.0 phases=1
+~ kv=0.2194 kw=0.1688 kvar=0.0492 daily=COM_Tipo7
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=COM-Tipo7
+
+New Load.UCBT_COM_13610584_1 bus1=BT_6531952.1.0 phases=1
+~ kv=0.2194 kw=0.0022 kvar=0.0007 daily=COM_Tipo7
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=COM-Tipo7
+
+New Load.UCBT_COM_13610584_2 bus1=BT_6531952.1.2.3.0 phases=3
+~ kv=0.3800 kw=15.2662 kvar=4.4526 daily=COM_Tipo3
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=ABCN CLAMP=['1', '2', '3'] TIP_CC=COM-Tipo3
+
+New Load.UCBT_COM_13610584_3 bus1=BT_6531952.1.2.3.0 phases=3
+~ kv=0.3800 kw=18.9174 kvar=5.5176 daily=COM_Tipo3
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=ABCN CLAMP=['1', '2', '3'] TIP_CC=COM-Tipo3
+
+New Load.UCBT_COM_13610584_4 bus1=BT_6531952.2.0 phases=1
+~ kv=0.2194 kw=0.4577 kvar=0.1335 daily=COM_Tipo6
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=BN CLAMP=['2'] TIP_CC=COM-Tipo6
+
+New Load.UCBT_RES_1444345_0 bus1=BT_2735313.1.0 phases=1
+~ kv=0.2194 kw=1.0847 kvar=0.2203 daily=RES_Tipo5
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo5
+
+New Load.UCBT_RES_1444345_1 bus1=BT_2735313.2.0 phases=1
+~ kv=0.2194 kw=0.5072 kvar=0.1030 daily=RES_Tipo9
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=BN CLAMP=['2'] TIP_CC=RES-Tipo9
+
+New Load.UCBT_RES_1444345_2 bus1=BT_2735313.1.0 phases=1
+~ kv=0.2194 kw=0.2814 kvar=0.0571 daily=RES_Tipo8
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo8
+
+New Load.UCBT_RES_1444345_3 bus1=BT_2735313.1.0 phases=1
+~ kv=0.2194 kw=0.5211 kvar=0.1058 daily=RES_Tipo2
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo2
+
+New Load.UCBT_RES_1444345_4 bus1=BT_2735313.1.0 phases=1
+~ kv=0.2194 kw=1.5024 kvar=0.3051 daily=RES_Tipo2
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo2
+
+New Load.UCBT_RES_1444345_5 bus1=BT_2735313.3.0 phases=1
+~ kv=0.2194 kw=1.2217 kvar=0.2481 daily=RES_Tipo7
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=CN CLAMP=['3'] TIP_CC=RES-Tipo7
+
+New Load.UCBT_RES_1444345_6 bus1=BT_2735313.1.0 phases=1
+~ kv=0.2194 kw=0.2655 kvar=0.0539 daily=RES_Tipo8
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo8
+
+New Load.UCBT_RES_1444345_7 bus1=BT_2735313.1.0 phases=1
+~ kv=0.2194 kw=0.2481 kvar=0.0504 daily=RES_Tipo8
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo8
+
+New Load.UCBT_COM_1444345_8 bus1=BT_2735313.3.0 phases=1
+~ kv=0.2194 kw=0.1359 kvar=0.0396 daily=COM_Tipo4
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=CN CLAMP=['3'] TIP_CC=COM-Tipo4
+
+New Load.UCBT_COM_1444345_9 bus1=BT_2735313.3.0 phases=1
+~ kv=0.2194 kw=0.1118 kvar=0.0326 daily=COM_Tipo4
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=CN CLAMP=['3'] TIP_CC=COM-Tipo4
+
+New Load.UCBT_COM_1444345_10 bus1=BT_2735313.3.0 phases=1
+~ kv=0.2194 kw=0.1249 kvar=0.0364 daily=COM_Tipo4
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=CN CLAMP=['3'] TIP_CC=COM-Tipo4
+
+New Load.UCBT_RES_1444345_11 bus1=BT_2735313.1.0 phases=1
+~ kv=0.2194 kw=1.0023 kvar=0.2035 daily=RES_Tipo2
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo2
+
+New Load.UCBT_RES_1444345_12 bus1=BT_2735313.2.0 phases=1
+~ kv=0.2194 kw=0.4318 kvar=0.0877 daily=RES_Tipo10
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=BN CLAMP=['2'] TIP_CC=RES-Tipo10
+
+New Load.UCBT_RES_1444345_13 bus1=BT_2735313.1.0 phases=1
+~ kv=0.2194 kw=0.3464 kvar=0.0703 daily=RES_Tipo8
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo8
+
+New Load.UCBT_RES_1444345_14 bus1=BT_2735313.2.0 phases=1
+~ kv=0.2194 kw=0.2905 kvar=0.0590 daily=RES_Tipo2
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=BN CLAMP=['2'] TIP_CC=RES-Tipo2
+
+New Load.UCBT_RES_1444345_15 bus1=BT_2735313.1.0 phases=1
+~ kv=0.2194 kw=0.3616 kvar=0.0734 daily=RES_Tipo2
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo2
+
+New Load.UCBT_COM_1833360_0 bus1=BT_1685990.1.0 phases=1
+~ kv=0.2194 kw=0.0276 kvar=0.0080 daily=COM_Tipo5
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=COM-Tipo5
+
+New Load.UCBT_COM_1833360_1 bus1=BT_1685990.1.0 phases=1
+~ kv=0.2194 kw=0.0271 kvar=0.0079 daily=COM_Tipo5
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=COM-Tipo5
+
+New Load.UCBT_RES_1835578_0 bus1=BT_1652212.1.2.0 phases=2
+~ kv=0.3800 kw=0.7986 kvar=0.1622 daily=RES_Tipo6
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=ABN CLAMP=['1', '2'] TIP_CC=RES-Tipo6
+
+New Load.UCBT_RES_1835578_1 bus1=BT_1652212.3.0 phases=1
+~ kv=0.2194 kw=0.7300 kvar=0.1482 daily=RES_Tipo9
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=CN CLAMP=['3'] TIP_CC=RES-Tipo9
+
+New Load.UCBT_RES_1835578_2 bus1=BT_1652212.1.0 phases=1
+~ kv=0.2194 kw=0.7072 kvar=0.1436 daily=RES_Tipo3
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo3
+
+New Load.UCBT_RES_1835578_3 bus1=BT_1652212.2.0 phases=1
+~ kv=0.2194 kw=0.4186 kvar=0.0850 daily=RES_Tipo8
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=BN CLAMP=['2'] TIP_CC=RES-Tipo8
+
+New Load.UCBT_RES_1835580_0 bus1=BT_1652208.1.2.3.0 phases=3
+~ kv=0.3800 kw=1.8992 kvar=0.3857 daily=RES_Tipo2
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=ABCN CLAMP=['1', '2', '3'] TIP_CC=RES-Tipo2
+
+New Load.UCBT_RES_1835582_0 bus1=BT_1652209.1.0 phases=1
+~ kv=0.2194 kw=1.3443 kvar=0.2730 daily=RES_Tipo9
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo9
+
+New Load.UCBT_RES_1835584_0 bus1=BT_1694168.3.0 phases=1
+~ kv=0.2194 kw=1.0803 kvar=0.2194 daily=RES_Tipo8
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=CN CLAMP=['3'] TIP_CC=RES-Tipo8
+
+New Load.UCBT_RES_1835584_1 bus1=BT_1694168.3.0 phases=1
+~ kv=0.2194 kw=0.5249 kvar=0.1066 daily=RES_Tipo8
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=CN CLAMP=['3'] TIP_CC=RES-Tipo8
+
+New Load.UCBT_RES_1835584_2 bus1=BT_1694168.1.2.3.0 phases=3
+~ kv=0.3800 kw=0.7325 kvar=0.1487 daily=RES_Tipo9
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=ABCN CLAMP=['1', '2', '3'] TIP_CC=RES-Tipo9
+
+New Load.UCBT_RES_1835584_3 bus1=BT_1694168.1.0 phases=1
+~ kv=0.2194 kw=0.1388 kvar=0.0282 daily=RES_Tipo1
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo1
+
+New Load.UCBT_RES_1835587_0 bus1=BT_1652210.1.0 phases=1
+~ kv=0.2194 kw=0.4103 kvar=0.0833 daily=RES_Tipo6
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo6
+
+New Load.UCBT_IND_1835591_0 bus1=BT_2725791.1.2.3.0 phases=3
+~ kv=0.3800 kw=1.3125 kvar=0.5591 daily=IND_Tipo6
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=ABCN CLAMP=['1', '2', '3'] TIP_CC=IND-Tipo6
+
+New Load.UCBT_COM_1835591_1 bus1=BT_2725791.1.0 phases=1
+~ kv=0.2194 kw=2.0122 kvar=0.5869 daily=COM_Tipo3
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=COM-Tipo3
+
+New Load.UCBT_COM_1835591_2 bus1=BT_2725791.1.0 phases=1
+~ kv=0.2194 kw=1.9788 kvar=0.5771 daily=COM_Tipo3
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=COM-Tipo3
+
+New Load.UCBT_COM_1835593_0 bus1=BT_1655576.1.2.3.0 phases=3
+~ kv=0.3800 kw=4.2415 kvar=1.2371 daily=COM_Tipo7
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=ABCN CLAMP=['1', '2', '3'] TIP_CC=COM-Tipo7
+
+New Load.UCBT_COM_1835593_1 bus1=BT_1655576.1.2.3.0 phases=3
+~ kv=0.3800 kw=5.8269 kvar=1.6995 daily=COM_Tipo7
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=ABCN CLAMP=['1', '2', '3'] TIP_CC=COM-Tipo7
+
+New Load.UCBT_RES_1850631_0 bus1=BT_1727690.2.0 phases=1
+~ kv=0.2194 kw=0.6848 kvar=0.1391 daily=RES_Tipo9
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=BN CLAMP=['2'] TIP_CC=RES-Tipo9
+
+New Load.UCBT_RES_1850631_1 bus1=BT_1727690.1.0 phases=1
+~ kv=0.2194 kw=0.3478 kvar=0.0706 daily=RES_Tipo4
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo4
+
+New Load.UCBT_RES_1850633_0 bus1=BT_1727691.2.0 phases=1
+~ kv=0.2194 kw=0.6499 kvar=0.1320 daily=RES_Tipo9
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=BN CLAMP=['2'] TIP_CC=RES-Tipo9
+
+New Load.UCBT_RES_1850633_1 bus1=BT_1727691.2.0 phases=1
+~ kv=0.2194 kw=0.4454 kvar=0.0904 daily=RES_Tipo9
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=BN CLAMP=['2'] TIP_CC=RES-Tipo9
+
+New Load.UCBT_RES_1850636_0 bus1=BT_1727695.3.0 phases=1
+~ kv=0.2194 kw=1.7566 kvar=0.3567 daily=RES_Tipo2
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=CN CLAMP=['3'] TIP_CC=RES-Tipo2
+
+New Load.UCBT_RES_1850636_1 bus1=BT_1727695.1.0 phases=1
+~ kv=0.2194 kw=0.3501 kvar=0.0711 daily=RES_Tipo3
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo3
+
+New Load.UCBT_RES_1850636_2 bus1=BT_1727695.1.0 phases=1
+~ kv=0.2194 kw=0.6126 kvar=0.1244 daily=RES_Tipo8
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo8
+
+New Load.UCBT_RES_1850636_3 bus1=BT_1727695.1.0 phases=1
+~ kv=0.2194 kw=2.1269 kvar=0.4319 daily=RES_Tipo2
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo2
+
+New Load.UCBT_RES_1850636_4 bus1=BT_1727695.2.0 phases=1
+~ kv=0.2194 kw=0.2880 kvar=0.0585 daily=RES_Tipo2
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=BN CLAMP=['2'] TIP_CC=RES-Tipo2
+
+New Load.UCBT_RES_1850640_0 bus1=BT_1727693.3.0 phases=1
+~ kv=0.2194 kw=0.0746 kvar=0.0151 daily=RES_Tipo4
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=CN CLAMP=['3'] TIP_CC=RES-Tipo4
+
+New Load.UCBT_RES_1850640_1 bus1=BT_1727693.2.0 phases=1
+~ kv=0.2194 kw=0.5241 kvar=0.1064 daily=RES_Tipo5
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=BN CLAMP=['2'] TIP_CC=RES-Tipo5
+
+New Load.UCBT_RES_1850640_2 bus1=BT_1727693.1.0 phases=1
+~ kv=0.2194 kw=1.0969 kvar=0.2227 daily=RES_Tipo2
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo2
+
+New Load.UCBT_RES_1850640_3 bus1=BT_1727693.2.0 phases=1
+~ kv=0.2194 kw=0.3205 kvar=0.0651 daily=RES_Tipo3
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=BN CLAMP=['2'] TIP_CC=RES-Tipo3
+
+New Load.UCBT_RES_1850642_0 bus1=BT_1716981.3.0 phases=1
+~ kv=0.2194 kw=1.8220 kvar=0.3700 daily=RES_Tipo7
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=CN CLAMP=['3'] TIP_CC=RES-Tipo7
+
+New Load.UCBT_RES_1850642_1 bus1=BT_1716981.1.0 phases=1
+~ kv=0.2194 kw=0.5335 kvar=0.1083 daily=RES_Tipo5
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo5
+
+New Load.UCBT_RES_1851246_0 bus1=BT_1727694.1.0 phases=1
+~ kv=0.2194 kw=0.9192 kvar=0.1867 daily=RES_Tipo2
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=RES-Tipo2
+
+New Load.UCBT_COM_1915414_0 bus1=BT_5925759.1.2.3.0 phases=3
+~ kv=0.3800 kw=2.0570 kvar=0.5999 daily=COM_Tipo7
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=ABCN CLAMP=['1', '2', '3'] TIP_CC=COM-Tipo7
+
+New Load.UCBT_COM_1915414_1 bus1=BT_5925759.1.2.3.0 phases=3
+~ kv=0.3800 kw=2.5144 kvar=0.7334 daily=COM_Tipo7
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=ABCN CLAMP=['1', '2', '3'] TIP_CC=COM-Tipo7
+
+New Load.UCBT_COM_2223498_0 bus1=BT_1655578.1.2.3.0 phases=3
+~ kv=0.3800 kw=16.5503 kvar=4.8272 daily=COM_Tipo6
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=ABCN CLAMP=['1', '2', '3'] TIP_CC=COM-Tipo6
+
+New Load.UCBT_COM_2644420_0 bus1=BT_2415596.1.2.3.0 phases=3
+~ kv=0.3800 kw=0.3671 kvar=0.1071 daily=COM_Tipo1
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=ABCN CLAMP=['1', '2', '3'] TIP_CC=COM-Tipo1
+
+New Load.UCBT_COM_2644420_1 bus1=BT_2415596.1.2.3.0 phases=3
+~ kv=0.3800 kw=0.3135 kvar=0.0914 daily=COM_Tipo1
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=ABCN CLAMP=['1', '2', '3'] TIP_CC=COM-Tipo1
+
+New Load.UCBT_COM_2644420_2 bus1=BT_2415596.1.2.3.0 phases=3
+~ kv=0.3800 kw=0.3469 kvar=0.1012 daily=COM_Tipo3
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=ABCN CLAMP=['1', '2', '3'] TIP_CC=COM-Tipo3
+
+New Load.UCBT_COM_2644420_3 bus1=BT_2415596.1.2.3.0 phases=3
+~ kv=0.3800 kw=0.7360 kvar=0.2147 daily=COM_Tipo3
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=ABCN CLAMP=['1', '2', '3'] TIP_CC=COM-Tipo3
+
+New Load.UCBT_COM_2644420_4 bus1=BT_2415596.1.2.3.0 phases=3
+~ kv=0.3800 kw=0.3769 kvar=0.1099 daily=COM_Tipo2
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=ABCN CLAMP=['1', '2', '3'] TIP_CC=COM-Tipo2
+
+New Load.UCBT_COM_2644420_5 bus1=BT_2415596.1.2.3.0 phases=3
+~ kv=0.3800 kw=0.4210 kvar=0.1228 daily=COM_Tipo2
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=ABCN CLAMP=['1', '2', '3'] TIP_CC=COM-Tipo2
+
+New Load.UCBT_COM_2644420_6 bus1=BT_2415596.1.0 phases=1
+~ kv=0.2194 kw=0.2087 kvar=0.0609 daily=COM_Tipo4
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=COM-Tipo4
+
+New Load.UCBT_COM_2644420_7 bus1=BT_2415596.1.0 phases=1
+~ kv=0.2194 kw=0.2125 kvar=0.0620 daily=COM_Tipo4
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=COM-Tipo4
+
+New Load.UCBT_COM_2644420_8 bus1=BT_2415596.1.0 phases=1
+~ kv=0.2194 kw=0.1703 kvar=0.0497 daily=COM_Tipo4
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=COM-Tipo4
+
+New Load.UCBT_COM_2644420_9 bus1=BT_2415596.1.0 phases=1
+~ kv=0.2194 kw=0.2323 kvar=0.0678 daily=COM_Tipo4
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS_BDGD=AN CLAMP=['1'] TIP_CC=COM-Tipo4

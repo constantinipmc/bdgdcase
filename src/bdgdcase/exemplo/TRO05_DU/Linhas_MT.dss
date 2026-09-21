@@ -1,0 +1,208 @@
+! ============================================================
+! Linhas_MT.dss – Segmentos MT (SSDMT), Chaves (UNSEMT) e Reguladores (UNREMT)
+! ============================================================
+
+! --- Cabos MT (SSDMT) ---
+New Line.MT_5053837 bus1=1707448.1.2.3 bus2=1707448.1.2.3
+~ LineCode=CND_MT-34-3-7 phases=3 length=0.039054 units=km
+
+New Line.MT_5355187 bus1=1707452.1.2.3 bus2=1707450.1.2.3
+~ LineCode=CND_MT-34-3-7 phases=3 length=0.029016 units=km
+
+New Line.MT_5972602 bus1=6327090.1.2.3 bus2=2237228.1.2.3
+~ LineCode=CND_MT-5-3-3 phases=3 length=0.028708 units=km
+
+New Line.MT_13269627 bus1=6327206.1.2.3 bus2=6327090.1.2.3
+~ LineCode=CND_MT-5-3-3 phases=3 length=0.039277 units=km
+
+New Line.MT_5901096 bus1=2237228.1.2.3 bus2=2237229.1.2.3
+~ LineCode=CND_MT-5-3-3 phases=3 length=0.048618 units=km
+
+New Line.MT_5757742 bus1=2237229.1.2.3 bus2=2237230.1.2.3
+~ LineCode=CND_MT-5-3-3 phases=3 length=0.049222 units=km
+
+New Line.MT_5722050 bus1=2237230.1.2.3 bus2=2237231.1.2.3
+~ LineCode=CND_MT-5-3-3 phases=3 length=0.050395 units=km
+
+New Line.MT_5053940 bus1=2237231.1.2.3 bus2=1707276.1.2.3
+~ LineCode=CND_MT-5-3-3 phases=3 length=0.049944 units=km
+
+New Line.MT_5820853 bus1=1705406.1.2.3 bus2=1705404.1.2.3
+~ LineCode=CND_MT-34-3-3 phases=3 length=0.028509 units=km
+
+New Line.MT_6070743 bus1=1678105.1.2.3 bus2=1652206.1.2.3
+~ LineCode=CND_MT-34-3-3 phases=3 length=0.020274 units=km
+
+New Line.MT_5247899 bus1=1678103.1.2.3 bus2=1678105.1.2.3
+~ LineCode=CND_MT-34-3-3 phases=3 length=0.023022 units=km
+
+New Line.MT_5408708 bus1=2554307.1.2.3 bus2=2554305.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.004968 units=km
+
+New Line.MT_5408709 bus1=2554304.1.2.3 bus2=2554306.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.011613 units=km
+
+New Line.MT_5122567 bus1=1678109.1.2.3 bus2=6133672.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.023230 units=km
+
+New Line.MT_5820726 bus1=2227001.1.2.3 bus2=1678109.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.059249 units=km
+
+New Line.MT_5757573 bus1=2669992.1.2.3 bus2=2227013.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.017348 units=km
+
+New Line.MT_5876030 bus1=2227013.1.2.3 bus2=2669993.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.012615 units=km
+
+New Line.MT_6090590 bus1=2227012.1.2.3 bus2=2669992.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.012638 units=km
+
+New Line.MT_5650234 bus1=2227011.1.2.3 bus2=2227012.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.032986 units=km
+
+New Line.MT_5900920 bus1=2227020.1.2.3 bus2=2227021.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.021337 units=km
+
+New Line.MT_6106885 bus1=2227021.1.2.3 bus2=1678103.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.020005 units=km
+
+New Line.MT_5125875 bus1=2227019.1.2.3 bus2=2227020.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.030261 units=km
+
+New Line.MT_5829437 bus1=2227018.1.2.3 bus2=2227019.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.028551 units=km
+
+New Line.MT_6115613 bus1=2227017.1.2.3 bus2=2227018.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.036647 units=km
+
+New Line.MT_5721839 bus1=2227015.1.2.3 bus2=2227016.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.033236 units=km
+
+New Line.MT_5685961 bus1=2227016.1.2.3 bus2=2227017.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.030177 units=km
+
+New Line.MT_6044011 bus1=2227014.1.2.3 bus2=2227015.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.034429 units=km
+
+New Line.MT_5363995 bus1=2669993.1.2.3 bus2=2227014.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.018681 units=km
+
+New Line.MT_5614382 bus1=1694169.1.2.3 bus2=2221653.1.2.3
+~ LineCode=CND_MT-32-3-3 phases=3 length=0.041753 units=km
+
+New Line.MT_5757718 bus1=2221653.1.2.3 bus2=2221654.1.2.3
+~ LineCode=CND_MT-32-3-3 phases=3 length=0.041850 units=km
+
+New Line.MT_5328373 bus1=2221654.1.2.3 bus2=2221655.1.2.3
+~ LineCode=CND_MT-32-3-3 phases=3 length=0.037624 units=km
+
+New Line.MT_5221046 bus1=2221655.1.2.3 bus2=2221656.1.2.3
+~ LineCode=CND_MT-32-3-3 phases=3 length=0.035946 units=km
+
+New Line.MT_5543230 bus1=2221656.1.2.3 bus2=2221657.1.2.3
+~ LineCode=CND_MT-32-3-3 phases=3 length=0.039006 units=km
+
+New Line.MT_6115777 bus1=2221657.1.2.3 bus2=2221658.1.2.3
+~ LineCode=CND_MT-32-3-3 phases=3 length=0.038546 units=km
+
+New Line.MT_5569689 bus1=2221658.1.2.3 bus2=1652207.1.2.3
+~ LineCode=CND_MT-32-3-3 phases=3 length=0.037306 units=km
+
+New Line.MT_5963441 bus1=1652207.1.2.3 bus2=1652198.1.2.3
+~ LineCode=CND_MT-32-3-3 phases=3 length=0.036797 units=km
+
+New Line.MT_5768925 bus1=2222267.1.2.3 bus2=2725790.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.035004 units=km
+
+New Line.MT_12827326 bus1=6133672.1.2.3 bus2=2222267.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.040557 units=km
+
+New Line.MT_5122568 bus1=2725790.1.2.3 bus2=2222268.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.028757 units=km
+
+New Line.MT_5542585 bus1=2222268.1.2.3 bus2=2222269.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.064668 units=km
+
+New Line.MT_6034897 bus1=1655575.1.2.3 bus2=1655574.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.113116 units=km
+
+New Line.MT_5050025 bus1=2222269.1.2.3 bus2=1655575.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.033199 units=km
+
+New Line.MT_5470935 bus1=1655574.1.2.3 bus2=2222312.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.008043 units=km
+
+New Line.MT_5784336 bus1=2542910.1.2.3 bus2=1655588.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.029968 units=km
+
+New Line.MT_5892204 bus1=1705542.1.2.3 bus2=1705540.1.2.3
+~ LineCode=CND_MT-32-3-3 phases=3 length=0.015704 units=km
+
+New Line.MT_6095009 bus1=2222312.1.2.3 bus2=2542910.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.022125 units=km
+
+New Line.MT_5343218 bus1=2542913.1.2.3 bus2=2542911.1.2.3
+~ LineCode=CND_MT-34-3-3 phases=3 length=0.021258 units=km
+
+New Line.MT_5256655 bus1=2554305.1.2.3 bus2=2227011.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.029661 units=km
+
+New Line.MT_5444334 bus1=1655573.1.2.3 bus2=2554304.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.028721 units=km
+
+New Line.MT_6052573 bus1=2227017.1.2.3 bus2=2564119.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.008488 units=km
+
+New Line.MT_5641503 bus1=1705530.1.2.3 bus2=1705528.1.2.3
+~ LineCode=CND_MT-32-3-3 phases=3 length=0.020731 units=km
+
+New Line.MT_5462846 bus1=1720309.1.2.3 bus2=1720307.1.2.3
+~ LineCode=CND_MT-34-3-3 phases=3 length=0.018742 units=km
+
+New Line.MT_5865253 bus1=1678106.1.2.3 bus2=2227001.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.034870 units=km
+
+New Line.MT_5712971 bus1=1678103.1.2.3 bus2=1678106.1.2.3
+~ LineCode=CND_MT-41-3-3 phases=3 length=0.056523 units=km
+
+New Line.MT_6035294 bus1=1707442.1.2.3 bus2=1707440.1.2.3
+~ LineCode=CND_MT-34-3-3 phases=3 length=0.023551 units=km
+
+New Line.MT_5355140 bus1=1694802.1.2.3 bus2=1694801.1.2.3
+~ LineCode=CND_CMT34-3-3 phases=3 length=0.021253 units=km
+
+! --- Chaves / Seccionadoras MT (UNSEMT) ---
+New Line.SW_6175301 bus1=1707448.1.2.3 bus2=1707452.1.2.3 phases=3 ! SE-bus: 1707448 | P_N_OPE original: F | modo=BDGD
+~ switch=y enabled=yes
+
+New Line.SW_6181021 bus1=2542910.1.2.3 bus2=2542913.1.2.3 phases=3 ! SE-bus: 2542910 | P_N_OPE original: F | modo=BDGD
+~ switch=y enabled=yes
+
+New Line.SW_6171634 bus1=1652206.1.2.3 bus2=1694169.1.2.3 phases=3 ! SE-bus: 1652206 | P_N_OPE original: F | modo=BDGD
+~ switch=y enabled=yes
+
+New Line.SW_6205557 bus1=2554306.1.2.3 bus2=2554307.1.2.3 phases=3 ! SE-bus: 2554306 | P_N_OPE original: F | modo=BDGD
+~ switch=y enabled=yes
+
+New Line.SW_6203481 bus1=1655588.1.2.3 bus2=1655589.1.2.3 phases=3 ! SE-bus: 1655588 | P_N_OPE original: F | modo=BDGD
+~ switch=y enabled=yes
+
+New Line.SW_6196610 bus1=2227019.1.2.3 bus2=2227008.1.2.3 phases=3 ! SE-bus: 2227019 | P_N_OPE original: A | enabled=no: mesmo trecho tem REG (evita bypass em paralelo ao trafo) | modo=BDGD
+~ switch=y enabled=no
+
+New Line.SW_6200296 bus1=2564119.1.2.3 bus2=2221321.1.2.3 phases=3 ! SE-bus: 2564119 | P_N_OPE original: A | enabled=no: mesmo trecho tem REG (evita bypass em paralelo ao trafo) | modo=BDGD
+~ switch=y enabled=no
+
+New Line.SW_12646844 bus1=SE_6034744.1.2.3 bus2=SE_6034379.1.2.3 phases=3 ! SE-bus: SE-6034744 | P_N_OPE original: F | modo=BDGD
+~ switch=y enabled=yes
+
+New Line.SW_12646928 bus1=SE_6034570.1.2.3 bus2=1655573.1.2.3 phases=3 ! SE-bus: SE-6034570 | P_N_OPE original: F | modo=BDGD
+~ switch=y enabled=yes
+
+New Line.SW_12646929 bus1=SE_6034744.1.2.3 bus2=1655573.1.2.3 phases=3 ! SE-bus: SE-6034744 | P_N_OPE original: A | enabled=no: mesmo trecho tem REG (evita bypass em paralelo ao trafo) | modo=BDGD
+~ switch=y enabled=no
+
+New Line.SW_12646845 bus1=SE_6034379.1.2.3 bus2=SE_6034570.1.2.3 phases=3 ! SE-bus: SE-6034379 | P_N_OPE original: F | modo=BDGD
+~ switch=y enabled=yes
+
+! --- Reguladores de Tensão MT (UNREMT) - Continuidade ---

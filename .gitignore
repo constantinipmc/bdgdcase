@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+venv/
+
+# Dados e resultados: a BDGD real nao vai ao repositorio (dezenas de GB, e o
+# download e publico no site da ANEEL). Os casos gerados tambem nao — sao saida,
+# nao fonte. O caso de exemplo nao cai aqui: ele mora em src/bdgdcase/exemplo/,
+# porque e empacotado junto com o codigo.
+*.gdb/
+input/
+Output/
+OpenDSS/
+logs/
+bdgdcase.json
+
+# Caderno de trabalho do mestrado: fica no disco de quem escreve, nao no pacote.
+DECISOES.md
+
+# O que os guias mandam gerar na raiz do clone
+tro05_du.csv
+tro05_du.png
+
+# Editores
+.vscode/
+.idea/
+.DS_Store

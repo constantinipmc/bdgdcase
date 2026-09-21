@@ -1,0 +1,10 @@
+# LF no repositório e no disco, em qualquer sistema.
+* text=auto eol=lf
+
+# Estes o git não toca de jeito nenhum. O pacote escreve LF em qualquer sistema,
+# e os testes comparam o caso gerado byte a byte com o de `exemplo/`. Se o git
+# convertesse esses arquivos ao clonar no Windows, a comparação falharia lá e
+# passaria no Linux — o pior tipo de teste, o que depende de onde roda.
+*.dss  -text
+*.csv  -text
+*.gpkg binary

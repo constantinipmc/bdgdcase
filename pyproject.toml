@@ -1,0 +1,84 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bdgdcase"
+version = "0.2.0"
+description = "Da BDGD (ANEEL) a um caso de simulacao OpenDSS."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Marcos Constantini", email = "constantini.pmc@gmail.com" },
+]
+keywords = ["BDGD", "ANEEL", "OpenDSS", "distribuicao", "rede eletrica"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Portuguese (Brazilian)",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+
+# Um pacote so. `pip install bdgdcase` traz a cadeia inteira: extrair,
+# converter, resolver e olhar no mapa. Nao ha extra a lembrar, nem comando que
+# falhe depois da instalacao por falta de uma peca.
+#
+# A unica coisa que fica de fora e o Tkinter, e nao por escolha: ele nao se
+# instala por pip. Vem com o Python no Windows e no macOS, e de
+# `apt install python3-tk` no Debian/Ubuntu. Sem ele a biblioteca e a linha de
+# comando funcionam inteiras; so a janela recusa, com mensagem explicita.
+dependencies = [
+    "numpy>=1.23",
+    "pandas>=1.5",
+    "geopandas>=0.13",
+    "pyogrio>=0.7",
+    "shapely>=2.0",
+    "pyproj>=3.4",
+    "OpenDSSDirect.py>=0.8",
+    "matplotlib>=3.6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/constantinipmc/bdgdcase"
+Issues = "https://github.com/constantinipmc/bdgdcase/issues"
+
+[project.scripts]
+bdgdcase = "bdgdcase.interface.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# O caso de exemplo viaja dentro do pacote: sao 153 KB que permitem a quem
+# acabou de instalar rodar `bdgdcase exemplo` e ver a coisa funcionando, sem
+# antes baixar gigabytes de BDGD.
+#
+# O catalogo de curvas de referencia viaja pela mesma razao, invertida: sao
+# 218 KB que salvam quem baixou uma BDGD cuja camada CRVCRG vem vazia, e que
+# sem eles converteria o alimentador inteiro com quatro curvas desenhadas a
+# mao. Dado aberto da ANEEL, redistribuido com atribuicao.
+[tool.setuptools.package-data]
+# O `Ajustes.json` viaja junto com o caso de exemplo: e o registro do que
+# a conversao mudou entre o cadastro cru e aquele caso, e a pasta tem de
+# sair com a explicacao do que ha nela.
+bdgdcase = ["exemplo/*/*.dss", "exemplo/*/*.csv", "exemplo/*/*.json",
+            "dados/*.csv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# O motor do OpenDSS e compilado em Free Pascal e, ao carregar a DLL no Windows,
+# levanta e trata internamente uma excecao SEH de codigo 0xE0465043 (os bytes
+# soletram "FPC"). E benigna -- o proprio runtime Pascal a captura --, mas o
+# faulthandler do pytest a intercepta e despeja um traceback de trinta linhas
+# antes de todos os testes passarem. Para investigar uma quebra de verdade no
+# nivel C, rode com `-p faulthandler`.
+addopts = "-p no:faulthandler"
+markers = [
+    "dados: exige a fixture de alimentador em tests/dados/",
+    "solver: resolve o caso no OpenDSS; `pytest -m solver` roda so esses",
+]

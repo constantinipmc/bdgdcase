@@ -1,0 +1,21 @@
+! ============================================================
+! GD.dss – Geracao Distribuida Individual (UGBT / UGMT)
+! ============================================================
+
+! --- UGBT: Painéis FV em Baixa Tensão ---
+
+New PVSystem.GD_BT_a79fbcfdb8df39beaddd7c7adb4edd bus1=BT_1655578.1.2.3.0 phases=3
+~ kv=0.3800 kva=75.000 pmpp=75.000 pf=1.0 daily=Curva_PV
+  ! tipo=PV fc=10% FAS_PEDIDA=ABCN FAS_REAL=ABCN mrt=False
+
+New PVSystem.GD_BT_103c6ec2c6b39f74c743c4fc965e2d bus1=BT_1694168.3.0 phases=1
+~ kv=0.2194 kva=45.000 pmpp=45.000 pf=1.0 daily=Curva_PV
+  ! tipo=PV fc=0% FAS_PEDIDA=CN FAS_REAL=ABCN mrt=False
+
+New PVSystem.GD_BT_03df361f821cfe775087d2bd521cf2 bus1=BT_5925759.1.2.3.0 phases=3
+~ kv=0.3800 kva=32.000 pmpp=32.000 pf=1.0 daily=Curva_PV
+  ! tipo=PV fc=2% FAS_PEDIDA=ABCN FAS_REAL=ABCN mrt=False
+
+New PVSystem.GD_BT_39b67cf374a7144c69fa6466f7a159 bus1=BT_1655576.1.2.3.0 phases=3
+~ kv=0.3800 kva=15.000 pmpp=15.000 pf=1.0 daily=Curva_PV
+  ! tipo=PV fc=7% FAS_PEDIDA=ABCN FAS_REAL=ABCN mrt=False

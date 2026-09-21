@@ -1,0 +1,65 @@
+{
+ "alimentador": "TRO05",
+ "dia": "DU",
+ "distribuidora": {
+  "dist": "5697",
+  "nome": "Celesc Distribuição (SC)"
+ },
+ "ajustes": [
+  {
+   "categoria": "topologia",
+   "titulo": "Unidades ligadas à rede por aproximação espacial",
+   "quantos": 18,
+   "unidade": "postes",
+   "efeito": "simulacao",
+   "detalhe": "O `PN_CON` destas unidades não casou com nenhuma barra da rede de baixa nem com um ramal de ligação. Foram ligadas ao ponto mais próximo geograficamente.",
+   "porque": "Sem isso a carga fica flutuante e some do caso — o alimentador resolve com menos carga do que tem, e nada avisa.",
+   "exemplos": []
+  },
+  {
+   "categoria": "topologia",
+   "titulo": "Unidades ligadas direto no secundário do transformador",
+   "quantos": 1,
+   "unidade": "postes",
+   "efeito": "simulacao",
+   "detalhe": "Nem o cadastro nem a geometria resolveram o ponto de conexão destas unidades; foram penduradas na barra de baixa do transformador que o cadastro indica.",
+   "porque": "Concentra a carga na cabeceira do secundário, então a queda de tensão ao longo do ramal daquelas unidades não aparece. É o último recurso antes de perder a carga.",
+   "exemplos": []
+  },
+  {
+   "categoria": "topologia",
+   "titulo": "Ramais de ligação herdaram a coordenada do poste",
+   "quantos": 35,
+   "unidade": "ramais",
+   "efeito": "desenho",
+   "detalhe": "O ramal de ligação não tem geometria própria na BDGD: é uma conexão tabular da unidade ao poste. A coordenada é herdada do lado que a tiver, em qualquer sentido.",
+   "porque": "Qual das pontas é o poste é convenção da distribuidora, e não é a mesma em todas — numa base o PAC_1 é a unidade e o PAC_2 é o poste, ao contrário das outras. Assumir um sentido deixava metade da rede de baixa sem como ser desenhada.",
+   "exemplos": []
+  },
+  {
+   "categoria": "topologia",
+   "titulo": "Nós de chave localizados pelo ponto do dispositivo",
+   "quantos": 6,
+   "unidade": "barras",
+   "efeito": "desenho",
+   "detalhe": "Estas barras existem só no UNSEMT/UNREMT: nenhum cabo as tem por extremo, então nenhuma geometria de linha passa por elas. A coordenada veio do ponto do próprio dispositivo.",
+   "porque": "Sem coordenada, o mapa não desenha nada que toque a barra, e o alimentador aparece com buracos: a rede para num poste e recomeça no seguinte. Um único nó de barramento de manobra chegou a apagar 35 trechos de uma vez.",
+   "exemplos": []
+  },
+  {
+   "categoria": "completude",
+   "titulo": "Camadas ausentes ou vazias nesta extração",
+   "quantos": 4,
+   "unidade": "camadas",
+   "efeito": "cadastro",
+   "detalhe": "Estas tabelas não vieram, ou vieram sem linhas: EQTRMT, UNREMT, UNCRMT, UGMT.",
+   "porque": "Nem toda ausência é defeito — há alimentador sem regulador, sem capacitor, sem geração. Fica registrado porque a diferença entre \"esta rede não tem\" e \"a extração não trouxe\" não aparece em lugar nenhum depois, e as duas dão o mesmo arquivo.",
+   "exemplos": [
+    "EQTRMT",
+    "UNREMT",
+    "UNCRMT",
+    "UGMT"
+   ]
+  }
+ ]
+}

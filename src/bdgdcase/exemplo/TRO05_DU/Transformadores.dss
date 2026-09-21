@@ -1,0 +1,80 @@
+! ============================================================
+! Transformadores.dss – Transformadores de Distribuicao
+! ============================================================
+
+! PARAM_SRC: XHL=lit, NoLoad=untrmt(PER_FER), R=untrmt(PER_TOT-PER_FER)
+New Transformer.TR_7483569 phases=3 windings=2
+~ xhl=4.00
+~ %Rs=[0.950 0.950] %imag=0.5 %noloadloss=0.667
+~ wdg=1 bus=2725790.1.2.3 kv=13.8000 kva=30.0 conn=delta
+~ wdg=2 bus=BT_2725791.1.2.3.0 kv=0.3800 kva=30.0 conn=wye
+
+! PARAM_SRC: XHL=lit, NoLoad=untrmt(PER_FER), R=untrmt(PER_TOT-PER_FER)
+New Transformer.TR_7449457 phases=3 windings=2
+~ xhl=4.20
+~ %Rs=[0.867 0.867] %imag=0.5 %noloadloss=0.578
+~ wdg=1 bus=1652207.1.2.3 kv=13.8000 kva=45.0 conn=delta
+~ wdg=2 bus=BT_1694168.1.2.3.0 kv=0.3800 kva=45.0 conn=wye
+
+! PARAM_SRC: XHL=lit, NoLoad=untrmt(PER_FER), R=untrmt(PER_TOT-PER_FER)
+New Transformer.TR_7451915 phases=3 windings=2
+~ xhl=4.20
+~ %Rs=[0.867 0.867] %imag=0.5 %noloadloss=0.578
+~ wdg=1 bus=1707276.1.2.3 kv=13.8000 kva=45.0 conn=delta
+~ wdg=2 bus=BT_1707277.1.2.3.0 kv=0.3800 kva=45.0 conn=wye
+
+! PARAM_SRC: XHL=lit, NoLoad=untrmt(PER_FER), R=untrmt(PER_TOT-PER_FER)
+New Transformer.TR_7449834 phases=3 windings=2
+~ xhl=4.50
+~ %Rs=[0.767 0.767] %imag=0.5 %noloadloss=0.520
+~ wdg=1 bus=1655574.1.2.3 kv=13.8000 kva=75.0 conn=delta
+~ wdg=2 bus=BT_1655577.1.2.3.0 kv=0.3800 kva=75.0 conn=wye
+
+! PARAM_SRC: XHL=lit, NoLoad=untrmt(PER_FER), R=untrmt(PER_TOT-PER_FER)
+New Transformer.TR_7449833 phases=3 windings=2
+~ xhl=5.00
+~ %Rs=[0.689 0.689] %imag=0.5 %noloadloss=0.462
+~ wdg=1 bus=1655575.1.2.3 kv=13.8000 kva=112.5 conn=delta
+~ wdg=2 bus=BT_1655576.1.2.3.0 kv=0.3800 kva=112.5 conn=wye
+
+! PARAM_SRC: XHL=lit, NoLoad=untrmt(PER_FER), R=untrmt(PER_TOT-PER_FER)
+New Transformer.TR_7307903 phases=3 windings=2
+~ xhl=2.00
+~ %Rs=[10.750 10.750] %imag=0.5 %noloadloss=8.500
+~ wdg=1 bus=1707440.1.2.3 kv=13.8000 kva=1.0 conn=delta
+~ wdg=2 bus=BT_1707441.1.2.3.0 kv=0.3800 kva=1.0 conn=wye
+
+! PARAM_SRC: XHL=lit, NoLoad=untrmt(PER_FER), R=untrmt(PER_TOT-PER_FER)
+New Transformer.TR_7308132 phases=3 windings=2
+~ xhl=2.00
+~ %Rs=[10.750 10.750] %imag=0.5 %noloadloss=8.500
+~ wdg=1 bus=1705528.1.2.3 kv=13.8000 kva=1.0 conn=delta
+~ wdg=2 bus=BT_1705529.1.2.3.0 kv=0.3800 kva=1.0 conn=wye
+
+! PARAM_SRC: XHL=lit, NoLoad=untrmt(PER_FER), R=untrmt(PER_TOT-PER_FER)
+New Transformer.TR_7308133 phases=3 windings=2
+~ xhl=2.00
+~ %Rs=[10.750 10.750] %imag=0.5 %noloadloss=8.500
+~ wdg=1 bus=1705540.1.2.3 kv=13.8000 kva=1.0 conn=delta
+~ wdg=2 bus=BT_1705541.1.2.3.0 kv=0.3800 kva=1.0 conn=wye
+
+! PARAM_SRC: XHL=lit, NoLoad=untrmt(PER_FER), R=untrmt(PER_TOT-PER_FER)
+New Transformer.TR_7307899 phases=3 windings=2
+~ xhl=2.00
+~ %Rs=[10.750 10.750] %imag=0.5 %noloadloss=8.500
+~ wdg=1 bus=1694801.1.2.3 kv=13.8000 kva=1.0 conn=delta
+~ wdg=2 bus=BT_1694803.1.2.3.0 kv=0.3800 kva=1.0 conn=wye
+
+! PARAM_SRC: XHL=lit, NoLoad=untrmt(PER_FER), R=untrmt(PER_TOT-PER_FER)
+New Transformer.TR_7307942 phases=3 windings=2
+~ xhl=2.00
+~ %Rs=[10.750 10.750] %imag=0.5 %noloadloss=8.500
+~ wdg=1 bus=1720307.1.2.3 kv=13.8000 kva=1.0 conn=delta
+~ wdg=2 bus=BT_1720308.1.2.3.0 kv=0.3800 kva=1.0 conn=wye
+
+! PARAM_SRC: XHL=lit, NoLoad=untrmt(PER_FER), R=untrmt(PER_TOT-PER_FER)
+New Transformer.TR_7307904 phases=3 windings=2
+~ xhl=2.00
+~ %Rs=[10.750 10.750] %imag=0.5 %noloadloss=8.500
+~ wdg=1 bus=1707450.1.2.3 kv=13.8000 kva=1.0 conn=delta
+~ wdg=2 bus=BT_1707451.1.2.3.0 kv=0.3800 kva=1.0 conn=wye

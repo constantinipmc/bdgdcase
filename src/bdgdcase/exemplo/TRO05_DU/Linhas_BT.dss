@@ -1,0 +1,197 @@
+! ============================================================
+! Linhas_BT.dss – Segmentos BT (SSDBT) e Ramais de Ligacao (RAMLIG)
+! ============================================================
+
+! --- Cabos BT (SSDBT) ---
+New Line.BT_8688936 bus1=BT_1652208.1.2.3 bus2=BT_2735313.1.2.3
+~ LineCode=CND_BT-149-149-149-149-4 phases=3 length=0.005269 units=km
+
+New Line.BT_9125657 bus1=BT_2735313.1.2.3 bus2=BT_1727690.1.2.3
+~ LineCode=CND_BT-32-32-32-32-7 phases=3 length=0.025808 units=km
+
+New Line.BT_9169039 bus1=BT_1685992.1.2.3 bus2=BT_1685990.1.2.3
+~ LineCode=CND_BT-34-34-34-34-7 phases=3 length=0.020992 units=km
+
+New Line.BT_8928849 bus1=BT_1652208.1.2.3 bus2=BT_1652212.1.2.3
+~ LineCode=CND_BT-3-3-3-3-7 phases=3 length=0.035006 units=km
+
+New Line.BT_8928828 bus1=BT_1652209.1.2.3 bus2=BT_1652208.1.2.3
+~ LineCode=CND_BT-7-7-7-3-7 phases=3 length=0.040501 units=km
+
+New Line.BT_8928834 bus1=BT_1694168.1.2.3 bus2=BT_1652209.1.2.3
+~ LineCode=CND_BT-7-7-7-3-7 phases=3 length=0.037717 units=km
+
+New Line.BT_8928841 bus1=BT_1694168.1.2.3 bus2=BT_1652211.1.2.3
+~ LineCode=CND_BT-7-7-7-3-7 phases=3 length=0.036360 units=km
+
+New Line.BT_9141602 bus1=BT_1652211.1.2.3 bus2=BT_1652210.1.2.3
+~ LineCode=CND_BT-7-7-7-3-7 phases=3 length=0.032373 units=km
+
+New Line.BT_9203850 bus1=BT_1652211.1.2.3 bus2=BT_1727695.1.2.3
+~ LineCode=CND_BT-61-61-61-61-4 phases=3 length=0.002641 units=km
+
+New Line.BT_9047372 bus1=BT_2725791.1.2.3 bus2=BT_1685991.1.2.3
+~ LineCode=CND_BT-34-34-34-34-7 phases=3 length=0.034720 units=km
+
+New Line.BT_9165835 bus1=BT_1685991.1.2.3 bus2=BT_1685992.1.2.3
+~ LineCode=CND_BT-34-34-34-34-7 phases=3 length=0.041205 units=km
+
+New Line.BT_9169033 bus1=BT_2725791.1.2.3 bus2=BT_1685989.1.2.3
+~ LineCode=CND_BT-34-34-34-34-7 phases=3 length=0.026731 units=km
+
+New Line.BT_9156852 bus1=BT_1678110.1 bus2=BT_1691630.1
+~ LineCode=CND_BT-32-0-0-32-7 phases=1 length=0.064681 units=km
+
+New Line.BT_9156836 bus1=BT_1655576.1.2.3 bus2=BT_1691629.1.2.3
+~ LineCode=CND_BT-61-61-61-61-4 phases=3 length=0.078235 units=km
+
+New Line.BT_9084484 bus1=BT_1655576.1.2.3 bus2=BT_1678110.1.2.3
+~ LineCode=CND_BT-140-140-140-140-4 phases=3 length=0.032093 units=km
+
+New Line.BT_8934082 bus1=BT_1655577.1.2.3 bus2=BT_1655578.1.2.3
+~ LineCode=CND_BT-148-148-148-148-4 phases=3 length=0.037666 units=km
+
+New Line.BT_9284947 bus1=BT_1691629.1 bus2=BT_1726911.1
+~ LineCode=CND_BT-201-0-0-201-4 phases=1 length=0.044204 units=km
+
+New Line.BT_9125647 bus1=BT_1727690.1.2.3 bus2=BT_1727691.1.2.3
+~ LineCode=CND_BT-32-32-32-32-7 phases=3 length=0.031035 units=km
+
+New Line.BT_9125637 bus1=BT_1727691.1.2.3 bus2=BT_1727689.1.2.3
+~ LineCode=CND_BT-32-32-32-32-7 phases=3 length=0.028014 units=km
+
+New Line.BT_9125627 bus1=BT_1727695.1.2.3 bus2=BT_1716982.1.2.3
+~ LineCode=CND_BT-32-32-32-32-7 phases=3 length=0.031858 units=km
+
+New Line.BT_9125591 bus1=BT_1727695.1.2.3 bus2=BT_1727692.1.2.3
+~ LineCode=CND_BT-34-34-34-34-7 phases=3 length=0.032857 units=km
+
+New Line.BT_9125618 bus1=BT_1727692.1.2.3 bus2=BT_1727693.1.2.3
+~ LineCode=CND_BT-34-34-34-34-7 phases=3 length=0.038561 units=km
+
+New Line.BT_9191303 bus1=BT_1727693.1.2.3 bus2=BT_1716981.1.2.3
+~ LineCode=CND_BT-34-34-34-34-7 phases=3 length=0.034194 units=km
+
+New Line.BT_9228742 bus1=BT_1716981.1.2.3 bus2=BT_1727694.1.2.3
+~ LineCode=CND_BT-34-34-34-34-7 phases=3 length=0.030038 units=km
+
+New Line.BT_9156873 bus1=BT_1691631.1.2.3 bus2=BT_5925759.1.2.3
+~ LineCode=CND_BT-148-148-148-148-4 phases=3 length=0.030264 units=km
+
+New Line.BT_13610587 bus1=BT_5925759.1.2.3 bus2=BT_6531952.1.2.3
+~ LineCode=CND_BT-148-148-148-148-4 phases=3 length=0.013514 units=km
+
+New Line.BT_9480568 bus1=BT_1691629.1.2.3 bus2=BT_2415596.1.2.3
+~ LineCode=CND_BT-61-61-61-61-4 phases=3 length=0.046771 units=km
+
+New Line.BT_9156869 bus1=BT_1692314.1.2.3 bus2=BT_1691631.1.2.3
+~ LineCode=CND_BT-148-148-148-148-4 phases=3 length=0.032023 units=km
+
+New Line.BT_9190639 bus1=BT_1678110.1.2.3 bus2=BT_1692314.1.2.3
+~ LineCode=CND_BT-148-148-148-148-4 phases=3 length=0.016741 units=km
+
+! --- Ramais de Ligacao (RAMLIG) ---
+New Line.RL_10058970 bus1=BT_1727695.1.2 bus2=BT_4149830.1.2
+~ LineCode=CND_15527-2F phases=2 length=0.015000 units=km
+
+New Line.RL_11264738 bus1=BT_1727695.3 bus2=BT_4186628.3
+~ LineCode=CND_34172-1F phases=1 length=0.015000 units=km
+
+New Line.RL_11638132 bus1=BT_1685989.1.2.3 bus2=BT_4080588.1.2.3
+~ LineCode=CND_15541-3F phases=3 length=0.014700 units=km
+
+New Line.RL_11051495 bus1=BT_1652212.1.2.3 bus2=BT_4003734.1.2.3
+~ LineCode=CND_15528-3F phases=3 length=0.015000 units=km
+
+New Line.RL_11054074 bus1=BT_1655578.1.2.3 bus2=BT_4180137.1.2.3
+~ LineCode=CND_5387-3F phases=3 length=0.014700 units=km
+
+New Line.RL_11075230 bus1=BT_1691629.1.2.3 bus2=BT_3414964.1.2.3
+~ LineCode=CND_5387-3F phases=3 length=0.014700 units=km
+
+New Line.RL_11401437 bus1=BT_1652212.3 bus2=BT_3130508.3
+~ LineCode=CND_15505-1F phases=1 length=0.014700 units=km
+
+New Line.RL_11644228 bus1=BT_2735313.1.2.3 bus2=BT_3079184.1.2.3
+~ LineCode=CND_15528-3F phases=3 length=0.015000 units=km
+
+New Line.RL_11728732 bus1=BT_1652208.1.2.3 bus2=BT_4260271.1.2.3
+~ LineCode=CND_15541-3F phases=3 length=0.014700 units=km
+
+New Line.RL_11075569 bus1=BT_5925759.1.2.3 bus2=BT_4298640.1.2.3
+~ LineCode=CND_5387-3F phases=3 length=0.014700 units=km
+
+New Line.RL_11617974 bus1=BT_1652210.1 bus2=BT_3785627.1
+~ LineCode=CND_5366-1F phases=1 length=0.014700 units=km
+
+New Line.RL_11771013 bus1=BT_1727695.1 bus2=BT_3613501.1
+~ LineCode=CND_15505-1F phases=1 length=0.014700 units=km
+
+New Line.RL_12396460 bus1=BT_1691630.1 bus2=BT_5891182.1
+~ LineCode=CND_34172-1F phases=1 length=0.015000 units=km
+
+New Line.RL_11526034 bus1=BT_1727691.2 bus2=BT_4312693.2
+~ LineCode=CND_34172-1F phases=1 length=0.015000 units=km
+
+New Line.RL_11644232 bus1=BT_1727693.1 bus2=BT_4492917.1
+~ LineCode=CND_34172-1F phases=1 length=0.015000 units=km
+
+New Line.RL_11762993 bus1=BT_1716981.1 bus2=BT_4496636.1
+~ LineCode=CND_5366-1F phases=1 length=0.014700 units=km
+
+New Line.RL_11054078 bus1=BT_1655576.1.2.3 bus2=BT_3531842.1.2.3
+~ LineCode=CND_15528-3F phases=3 length=0.015000 units=km
+
+New Line.RL_11482427 bus1=BT_1727690.1.2 bus2=BT_4193401.1.2
+~ LineCode=CND_15527-2F phases=2 length=0.015000 units=km
+
+New Line.RL_11482429 bus1=BT_1727693.2 bus2=BT_4429245.2
+~ LineCode=CND_5366-1F phases=1 length=0.014700 units=km
+
+New Line.RL_13475299 bus1=BT_1685990.1 bus2=BT_6457009.1
+~ LineCode=CND_34172-1F phases=1 length=0.015000 units=km
+
+New Line.RL_11091101 bus1=BT_1691629.1.2.3 bus2=BT_4063608.1.2.3
+~ LineCode=CND_15528-3F phases=3 length=0.015000 units=km
+
+New Line.RL_11592124 bus1=BT_1727694.1 bus2=BT_4079154.1
+~ LineCode=CND_5366-1F phases=1 length=0.014700 units=km
+
+New Line.RL_11644230 bus1=BT_1652209.1 bus2=BT_3550148.1
+~ LineCode=CND_34172-1F phases=1 length=0.015000 units=km
+
+New Line.RL_11264746 bus1=BT_1716981.3 bus2=BT_3715205.3
+~ LineCode=CND_34172-1F phases=1 length=0.015000 units=km
+
+New Line.RL_11091105 bus1=BT_2415596.1.2.3 bus2=BT_4240232.1.2.3
+~ LineCode=CND_15528-3F phases=3 length=0.015000 units=km
+
+New Line.RL_11526036 bus1=BT_1727693.2 bus2=BT_3075467.2
+~ LineCode=CND_34172-1F phases=1 length=0.015000 units=km
+
+New Line.RL_11264742 bus1=BT_1727693.3 bus2=BT_3185497.3
+~ LineCode=CND_34172-1F phases=1 length=0.015000 units=km
+
+New Line.RL_11536604 bus1=BT_1727695.1 bus2=BT_4077466.1
+~ LineCode=CND_5366-1F phases=1 length=0.014700 units=km
+
+New Line.RL_14191492 bus1=BT_1685989.1 bus2=BT_6777317.1
+~ LineCode=CND_34172-1F phases=1 length=0.015000 units=km
+
+New Line.RL_11208263 bus1=BT_1694168.3 bus2=BT_4067238.3
+~ LineCode=CND_5366-1F phases=1 length=0.014700 units=km
+
+New Line.RL_11592122 bus1=BT_1694168.1 bus2=BT_3018365.1
+~ LineCode=CND_5366-1F phases=1 length=0.014700 units=km
+
+New Line.RL_11091267 bus1=BT_2735313.1.2.3 bus2=BT_4122617.1.2.3
+~ LineCode=CND_15528-3F phases=3 length=0.015000 units=km
+
+New Line.RL_11637646 bus1=BT_1652212.1 bus2=BT_4021925.1
+~ LineCode=CND_15505-1F phases=1 length=0.014700 units=km
+
+New Line.RL_12460219 bus1=BT_1694168.1.2.3 bus2=BT_5922426.1.2.3
+~ LineCode=CND_5368-3F phases=3 length=0.014700 units=km
+
+New Line.RL_11090887 bus1=BT_6531952.1.2.3 bus2=BT_3238945.1.2.3
+~ LineCode=CND_15541-3F phases=3 length=0.014700 units=km

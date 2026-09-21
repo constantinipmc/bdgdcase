@@ -1,0 +1,61 @@
+! ==============================================================
+! Master.dss – Alimentador TRO05
+! ==============================================================
+
+Clear
+
+! ----- Definicao do Circuito (Fonte) -----
+New Circuit.TRO05
+~ bus1=1655573.1.2.3
+~ basekv=13.800
+~ pu=1.02
+~ phases=3
+~ frequency=60
+~ MVAsc3=200.000
+~ MVAsc1=150.000
+
+! ----- Elementos de Rede -----
+Redirect LineCodes.dss
+Redirect Transformadores.dss
+Redirect Linhas_MT.dss
+Redirect Linhas_BT.dss
+Redirect Capacitores.dss
+! Redirect Jumpers.dss
+
+! ----- Curvas de carga (CRVCRG / TIP_CC) -----
+Redirect CurvasDeCarga.dss
+
+! ----- Cargas -----
+Redirect Cargas_BT.dss
+Redirect Cargas_MT.dss
+
+! ----- Geracao Distribuida -----
+Redirect GD.dss
+
+! ----- Medidores -----
+New EnergyMeter.MED_CABECEIRA element=Line.MT_5444334 terminal=1
+
+! ----- Tensao Base -----
+! So as bases que este caso tem (derivadas dos secundarios emitidos).
+! Base sobrando e escolhida por engano quando a rede esta 5% acima do nominal a vazio.
+Set VoltageBases=[13.800 0.380]
+CalcVoltageBases
+
+! ----- Coordenadas -----
+BusCoords BusCoords.csv
+
+! ----- Configuracoes de solucao -----
+! Redes de distribuicao + RegControl: tolerancia 1e-4 costuma exigir >100 it.; 1e-3 e tipico.
+! Uma tolerancia mais apertada (1e-5) foi medida e nao adotada: cura um
+! alimentador e faz outro deixar de convergir. O criterio do OpenDSS e a variacao
+! de tensao entre iteracoes, e uma iteracao que empaca o satisfaz sem resolver;
+! por isso `bdgdcase rodar` confere o balanco de potencia a cada passo e recusa o
+! passo que nao fecha, em vez de publica-lo.
+! MaxControlIter padrao do OpenDSS = 10 (EPRI) — com varios RegControl 1phi e maxtapchange=1, e pouco.
+! 300 permite que 9 controles independentes (3 bancos x 3 fases) acomodem transicoes bruscas de GD
+! sem precisar do retry com reset de taps (que distorce o pico de potencia medido).
+Set MaxControlIter=300
+Set MaxIter=300
+Set Tolerance=0.001
+Set Algorithm=Newton
+! Set ControlTrace=Yes

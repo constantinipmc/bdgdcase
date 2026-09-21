@@ -1,0 +1,26 @@
+! ============================================================
+! Cargas_MT.dss – Consumidores MT (UCMT) + Iluminacao Publica (PIP)
+! ============================================================
+
+! --- Consumidores MT (UCMT) – baseados em consumo real ---
+
+New Load.UCMT_2542911_0 bus1=2542911.1.2.3 phases=3
+~ kv=13.800 kw=14.8566 kvar=4.3332 daily=MT_Tipo3
+~ model=8 conn=delta ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! FAS=ABC TIP_CC=MT-Tipo3
+
+! --- Iluminacao Publica (PIP) – agregada por transformador ---
+New Load.PIP_7449457 bus1=BT_1694168.1.2.3.0 phases=3
+~ kv=0.380 kw=0.512388 kvar=0.073000 daily=IP_Tipo1
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! 9 pontos IP | fases=['1', '2', '3'] TIP_CC=IP-Tipo1
+
+New Load.PIP_7449833 bus1=BT_1655576.1.2.3.0 phases=3
+~ kv=0.380 kw=0.387172 kvar=0.055200 daily=IP_Tipo1
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! 6 pontos IP | fases=['1', '2', '3'] TIP_CC=IP-Tipo1
+
+New Load.PIP_7449834 bus1=BT_1655577.1.2.3.0 phases=3
+~ kv=0.380 kw=0.177349 kvar=0.025300 daily=IP_Tipo1
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! 2 pontos IP | fases=['1', '2', '3'] TIP_CC=IP-Tipo1
+
+New Load.PIP_7483569 bus1=BT_2725791.1.2.3.0 phases=3
+~ kv=0.380 kw=0.336948 kvar=0.048000 daily=IP_Tipo1
+~ model=8 conn=wye ZIPV=[0.5, 0, 0.5, 1, 0, 0, 0.5]  ! 4 pontos IP | fases=['1', '2', '3'] TIP_CC=IP-Tipo1

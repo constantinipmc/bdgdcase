@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Se este software for usado em trabalho academico, cite-o como abaixo."
+title: "bdgdcase: da BDGD (ANEEL) a um caso de simulacao OpenDSS"
+abstract: >-
+  Converte a Base de Dados Geografica da Distribuidora, de submissao obrigatoria
+  ao regulador brasileiro, em um caso de fluxo de potencia para o OpenDSS. Trata
+  as lacunas do cadastro que impedem a convergencia e documenta as decisoes de
+  modelagem que a travessia obriga a tomar.
+type: software
+authors:
+  - family-names: Constantini
+    given-names: Marcos
+    email: constantini.pmc@gmail.com
+    affiliation: >-
+      Programa de Pos-Graduacao em Energia e Sustentabilidade, Universidade
+      Federal de Santa Catarina, Campus Ararangua
+version: 0.2.0
+license: MIT
+repository-code: "https://github.com/constantinipmc/bdgdcase"
+keywords:
+  - BDGD
+  - ANEEL
+  - OpenDSS
+  - redes de distribuicao
+  - reprodutibilidade

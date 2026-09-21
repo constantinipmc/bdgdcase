@@ -1,0 +1,139 @@
+! ============================================================
+! LineCodes.dss – Catálogo de Cabos (SEGCON + Genéricos)
+! ============================================================
+
+! --- Linhas de Media Tensao (Fallback) ---
+New LineCode.LT_MT_1F_AER nphases=1 units=km
+~ R1=0.6156 X1=0.4500 C1=5.00
+~ R0=0.6156 X0=0.4500 C0=5.00
+
+New LineCode.LT_MT_1F_SUB nphases=1 units=km
+~ R1=0.4500 X1=0.1000 C1=100.00
+~ R0=0.5000 X0=0.1500 C0=100.00
+
+New LineCode.LT_MT_2F_AER nphases=2 units=km
+~ R1=0.4500 X1=0.4000 C1=7.00
+~ R0=0.6000 X0=1.2000 C0=7.00
+
+New LineCode.LT_MT_2F_SUB nphases=2 units=km
+~ R1=0.3500 X1=0.1000 C1=150.00
+~ R0=0.4000 X0=0.1500 C0=150.00
+
+New LineCode.LT_MT_3F_AER nphases=3 units=km
+~ R1=0.3505 X1=0.3703 C1=9.42
+~ R0=0.5000 X0=1.2000 C0=9.42
+
+New LineCode.LT_MT_3F_SUB nphases=3 units=km
+~ R1=0.2680 X1=0.0950 C1=200.00
+~ R0=0.3000 X0=0.1500 C0=200.00
+
+! --- Linhas de Baixa Tensao (Fallback) ---
+New LineCode.LT_BT_1F_AER nphases=1 units=km
+~ R1=1.5000 X1=0.0700 C1=20.00
+~ R0=1.5000 X0=0.0700 C0=20.00
+
+New LineCode.LT_BT_1F_SUB nphases=1 units=km
+~ R1=1.2000 X1=0.0800 C1=80.00
+~ R0=1.2000 X0=0.0800 C0=80.00
+
+New LineCode.LT_BT_2F_AER nphases=2 units=km
+~ R1=1.2500 X1=0.0700 C1=30.00
+~ R0=1.2500 X0=0.0700 C0=30.00
+
+New LineCode.LT_BT_2F_SUB nphases=2 units=km
+~ R1=0.9000 X1=0.0800 C1=100.00
+~ R0=0.9000 X0=0.0800 C0=100.00
+
+New LineCode.LT_BT_3F_AER nphases=3 units=km
+~ R1=0.8400 X1=0.0700 C1=50.00
+~ R0=0.8400 X0=0.0700 C0=50.00
+
+New LineCode.LT_BT_3F_SUB nphases=3 units=km
+~ R1=0.6700 X1=0.0750 C1=200.00
+~ R0=0.6700 X0=0.0750 C0=200.00
+
+! --- Ramais de Ligacao (Fallback) ---
+New LineCode.LT_RL_1F_AER nphases=1 units=km
+~ R1=2.5000 X1=0.0600 C1=10.00
+~ R0=2.5000 X0=0.0600 C0=10.00
+
+New LineCode.LT_RL_2F_AER nphases=2 units=km
+~ R1=2.0000 X1=0.0600 C1=15.00
+~ R0=2.0000 X0=0.0600 C0=15.00
+
+New LineCode.LT_RL_3F_AER nphases=3 units=km
+~ R1=1.8000 X1=0.0600 C1=20.00
+~ R0=1.8000 X0=0.0600 C0=20.00
+
+! --- Condutores Reais do BDGD (Extraídos da Tabela SEGCON) ---
+New LineCode.CND_MT-32-3-3 nphases=3 units=km
+~ R1=1.504000 X1=0.486000 R0=2.256000 X0=1.458000 NormAmps=125.0
+
+New LineCode.CND_MT-41-3-3 nphases=3 units=km
+~ R1=0.187000 X1=0.403000 R0=0.280500 X0=1.209000 NormAmps=510.0
+
+New LineCode.CND_CMT34-3-3 nphases=3 units=km
+~ R1=0.948000 X1=0.468000 R0=1.422000 X0=1.404000 NormAmps=165.0
+
+New LineCode.CND_MT-34-3-7 nphases=3 units=km
+~ R1=0.948000 X1=0.468000 R0=1.422000 X0=1.404000 NormAmps=165.0
+
+New LineCode.CND_MT-5-3-3 nphases=3 units=km
+~ R1=0.934000 X1=0.490000 R0=1.401000 X0=1.470000 NormAmps=170.0
+
+New LineCode.CND_MT-34-3-3 nphases=3 units=km
+~ R1=0.948000 X1=0.468000 R0=1.422000 X0=1.404000 NormAmps=165.0
+
+New LineCode.CND_BT-32-32-32-32-7 nphases=3 units=km
+~ R1=1.504000 X1=0.486000 R0=2.256000 X0=1.458000 NormAmps=125.0
+
+New LineCode.CND_BT-3-3-3-3-7 nphases=3 units=km
+~ R1=1.485000 X1=0.508000 R0=2.227500 X0=1.524000 NormAmps=120.0
+
+New LineCode.CND_BT-61-61-61-61-4 nphases=3 units=km
+~ R1=0.776700 X1=0.101400 R0=1.165050 X0=0.304200 NormAmps=150.0
+
+New LineCode.CND_BT-7-7-7-3-7 nphases=3 units=km
+~ R1=0.599000 X1=0.467000 R0=0.898500 X0=1.401000 NormAmps=220.0
+
+New LineCode.CND_BT-34-34-34-34-7 nphases=3 units=km
+~ R1=0.948000 X1=0.468000 R0=1.422000 X0=1.404000 NormAmps=165.0
+
+New LineCode.CND_BT-149-149-149-149-4 nphases=3 units=km
+~ R1=0.776700 X1=0.101400 R0=1.165050 X0=0.304200 NormAmps=150.0
+
+New LineCode.CND_BT-201-0-0-201-4 nphases=3 units=km
+~ R1=3.872000 X1=0.111500 R0=5.808000 X0=0.334500 NormAmps=51.0
+
+New LineCode.CND_BT-148-148-148-148-4 nphases=3 units=km
+~ R1=0.554400 X1=0.096700 R0=0.831600 X0=0.290100 NormAmps=196.0
+
+New LineCode.CND_BT-32-0-0-32-7 nphases=3 units=km
+~ R1=1.504000 X1=0.486000 R0=2.256000 X0=1.458000 NormAmps=125.0
+
+New LineCode.CND_BT-140-140-140-140-4 nphases=3 units=km
+~ R1=0.323600 X1=0.094000 R0=0.485400 X0=0.282000 NormAmps=280.0
+
+New LineCode.CND_15505-1F nphases=3 units=km
+~ R1=3.948900 X1=0.106200 R0=5.923350 X0=0.318600 NormAmps=65.0
+
+New LineCode.CND_15527-2F nphases=3 units=km
+~ R1=3.948900 X1=0.106200 R0=5.923350 X0=0.318600 NormAmps=55.0
+
+New LineCode.CND_15528-3F nphases=3 units=km
+~ R1=3.948900 X1=0.106200 R0=5.923350 X0=0.318600 NormAmps=44.0
+
+New LineCode.CND_15541-3F nphases=3 units=km
+~ R1=2.448900 X1=0.102700 R0=3.673350 X0=0.308100 NormAmps=59.0
+
+New LineCode.CND_34172-1F nphases=3 units=km
+~ R1=2.448900 X1=0.102700 R0=3.673350 X0=0.308100 NormAmps=86.0
+
+New LineCode.CND_5366-1F nphases=3 units=km
+~ R1=3.690000 X1=0.130000 R0=5.535000 X0=0.390000 NormAmps=51.0
+
+New LineCode.CND_5368-3F nphases=3 units=km
+~ R1=2.190000 X1=0.370000 R0=3.285000 X0=1.110000 NormAmps=88.0
+
+New LineCode.CND_5387-3F nphases=3 units=km
+~ R1=0.870000 X1=0.340000 R0=1.305000 X0=1.020000 NormAmps=161.0

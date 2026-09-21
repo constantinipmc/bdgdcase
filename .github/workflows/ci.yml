@@ -1,0 +1,55 @@
+name: testes
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  pytest:
+    # Linux e Windows porque o pacote lida com caminhos e encoding de arquivo, que
+    # e onde os dois sistemas discordam. Que importar a biblioteca nao exige Tk
+    # e provado por tests/test_importacao.py, num Python cego para tkinter — e
+    # nao pelo runner, que pode ou nao te-lo.
+    #
+    # Um job so: o solver e o mapa sao dependencias do pacote, entao a suite
+    # inteira roda de uma vez. Os testes que resolvem o caso levam o marcador
+    # `solver`, e e por ele que se separa o diagnostico quando o motor quebra.
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.9', '3.12']
+
+    runs-on: ${{ matrix.os }}
+
+    env:
+      MPLBACKEND: Agg   # o runner nao tem tela; o mapa desenha fora dela
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Instalar
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install ".[dev]"
+
+      - name: Importar sem abrir janela nenhuma
+        run: python -c "import bdgdcase; print(bdgdcase.__version__)"
+
+      - name: CLI responde
+        run: bdgdcase --version
+
+      - name: O caso de exemplo resolve (a partir do repositorio)
+        run: bdgdcase verificar src/bdgdcase/exemplo/TRO05_DU
+
+      - name: O caso instalado roda (a partir do pacote)
+        run: bdgdcase exemplo
+
+      - name: pytest
+        run: pytest -v
